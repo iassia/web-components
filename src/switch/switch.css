@@ -1,4 +1,5 @@
 .switch {
+  --disabled-color: grey;
   --bg-color: dodgerblue;
   --fg-color: white;
   --height: 20px;
@@ -33,6 +34,11 @@
 
 .switch:checked::after {
   transform: translate(var(--button-end-position), var(--button-positon));
+}
+
+.switch:disabled {
+  background-color: var(--disabled-color);
+  opacity: 0.5;
 }
 
 .group {
