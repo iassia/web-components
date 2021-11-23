@@ -19,6 +19,7 @@
   height: var(--height);
   background-color: var(--bg-color);
   border-radius: calc(var(--height) / 2);
+  cursor: pointer;
 }
 
 .switch::after {
@@ -39,6 +40,7 @@
 .switch:disabled {
   background-color: var(--disabled-color);
   opacity: 0.5;
+  cursor: default;
 }
 
 .group {
