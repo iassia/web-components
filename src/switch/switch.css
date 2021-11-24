@@ -5,9 +5,9 @@
   --height: 20px;
   --width: calc(var(--height) + var(--height) * 0.5);
   --button-radius: calc(var(--height) - var(--height) * 0.2);
-  --button-positon: calc((var(--height) - var(--button-radius)) / 2);
+  --button-position: calc((var(--height) - var(--button-radius)) / 2);
   --button-end-position: calc(
-    var(--width) - var(--button-radius) - var(--button-positon)
+    var(--width) - var(--button-radius) - var(--button-position)
   );
 }
 
@@ -29,12 +29,12 @@
   width: var(--button-radius);
   height: var(--button-radius);
   border-radius: 50%;
-  transform: translate(var(--button-positon), var(--button-positon));
+  transform: translate(var(--button-position), var(--button-position));
   transition: transform 0.1s ease-in-out;
 }
 
 .switch:checked::after {
-  transform: translate(var(--button-end-position), var(--button-positon));
+  transform: translate(var(--button-end-position), var(--button-position));
 }
 
 .switch:disabled {
