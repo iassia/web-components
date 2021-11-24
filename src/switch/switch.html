@@ -21,9 +21,15 @@
     </label>
 
     <!-- Example using input and label as siblings and for/id -->
-    <div class="group">
-      <input type="checkbox" id="feature" class="switch" disabled />
-      <label for="feature" class="label" id="label">Feature (disabled)</label>
-    </div>
+    <label class="group">
+      <input type="checkbox" class="switch" disabled />
+      <span class="label">Feature (disabled)</span>
+    </label>
+
+    <!-- Change switch size using BEM Class -->
+    <label class="group">
+      <input type="checkbox" class="switch switch--large" />
+      <span class="label">Feature (large)</span>
+    </label>
   </body>
 </html>

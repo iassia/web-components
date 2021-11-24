@@ -43,6 +43,10 @@
   cursor: default;
 }
 
+.switch--large {
+  --height: 30px;
+}
+
 .group {
   display: flex;
   align-items: center;
